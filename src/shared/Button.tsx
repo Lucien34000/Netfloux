@@ -1,6 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 
-const Button = (props) => {
+interface ButtonProps {
+    label : string;
+    click: () => void;
+}
+
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     return (
         <div style={{display: 'flex', justifyContent: 'center', margin: '30px 0'}} >
             <button

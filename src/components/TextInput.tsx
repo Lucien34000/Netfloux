@@ -1,6 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-const Input = (props) => {
+interface InputProps {
+    label : string;
+    type: string;
+    value: string;
+    name?: string;
+    action: React.ChangeEventHandler;
+}
+
+const Input: React.FC<InputProps> = (props: InputProps) => {
     return (
         <div  style={{marginBottom: '20px', display: 'flex', justifyContent:'space-between'}}        >
             <label htmlFor={props.label} style={{marginRight: '20px'}}>
@@ -15,7 +23,6 @@ const Input = (props) => {
             />
         </div>
     );
-
 }
 
 export default Input;

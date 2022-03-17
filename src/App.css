@@ -16,9 +16,8 @@
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 1.5em;
   color: white;
 }
@@ -40,6 +39,12 @@
   border-radius: 10px;
 }
 
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
 .form {
   border: 1px solid white;
   padding: 20px 15px;
@@ -51,6 +56,7 @@
 }
 
 .poster {
+  margin-left: 12%;
   max-width: 300px;
 }
 
@@ -69,7 +75,6 @@
   background-color: rgb(177, 56, 56);
   color: white;
   font-size: 18px;
-  letter-spacing: 1.5px;
   font-weight: 900;
   padding: .5em 3em;
   border-radius: 5px;
@@ -80,4 +85,46 @@
 
 h1 {
   margin: .3em 0!important;
+}
+
+.navLink {
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 5px 30px;
+  color: white;
+  font-size: .6em;
+  font-weight: 400;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.navLink:hover {
+  transition: all .3s;
+  background-color: #B03838;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.link:hover {
+  color: #c34b4b;
+  text-decoration: underline;
+  transition: all .3s;
+}
+
+.home {
+  background-color: #282c34;
+  margin: 5% 20%;
+  border: 1px solid white;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
 }
